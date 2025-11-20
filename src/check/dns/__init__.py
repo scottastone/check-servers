@@ -95,7 +95,7 @@ def check_site(site: str) -> SiteCheckResult:
         display_ipv6=display_ipv6
     )
 
-def main():
+def run():
     """Main script execution."""
     console = Console()
     results = {}
@@ -139,6 +139,3 @@ def main():
     console.print(table)
     console.print(f"PIHOLE1 STATS: [green]{ph1_ok}/{len(WEBSITES)} OK[/] | [red]{len(WEBSITES) - ph1_ok} FAIL[/]")
     console.print(f"PIHOLE2 STATS: [green]{ph2_ok}/{len(WEBSITES)} OK[/] | [red]{len(WEBSITES) - ph2_ok} FAIL[/]")
-
-if __name__ == "__main__":
-    main()

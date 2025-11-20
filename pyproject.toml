@@ -8,5 +8,8 @@ dependencies = [
     "dnspython>=2.8.0",
     "docker>=7.1.0",
     "ping3>=5.1.5",
+    "pyinstaller>=6.16.0",
+    "pytest>=9.0.1",
+    "pytest-cov>=7.0.0",
     "rich>=14.2.0",
 ]
